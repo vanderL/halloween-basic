@@ -58,6 +58,12 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/
+function scrollUp() {
+  const scrollUp = document.getElementById('scroll-up');
 
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+}
+
+window.addEventListener('scroll', scrollUp);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/

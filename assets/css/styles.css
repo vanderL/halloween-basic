@@ -247,7 +247,9 @@ img {
 }
 
 /* Active link */
-
+.active-link {
+  color: var(--first-color);
+}
 
 /*=============== HOME ===============*/
 .home {
@@ -711,7 +713,21 @@ img {
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(22, 8%, 10%);
+}
 
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(22, 8%, 20%);
+  transition: all .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(22, 8%, 30%);
+}
 
 /*=============== SCROLL UP ===============*/
 
